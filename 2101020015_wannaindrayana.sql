@@ -110,10 +110,6 @@ INSERT INTO `produk` (`id_produk`, `nama_produk`, `id_kategori`, `harga`, `gamba
 (10, 'Lipstick', 10, 100000, 'lipstick.png');
 
 --
--- Indexes for dumped tables
---
-
---
 -- Indexes for table `detail_pesanan`
 --
 ALTER TABLE `detail_pesanan`
@@ -141,10 +137,6 @@ ALTER TABLE `produk`
   ADD KEY `id_kategori` (`id_kategori`);
 
 --
--- Constraints for dumped tables
---
-
---
 -- Constraints for table `detail_pesanan`
 --
 ALTER TABLE `detail_pesanan`
@@ -157,7 +149,3 @@ ALTER TABLE `detail_pesanan`
 ALTER TABLE `produk`
   ADD CONSTRAINT `produk_ibfk_1` FOREIGN KEY (`id_kategori`) REFERENCES `kategori` (`id_kategori`);
 COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
